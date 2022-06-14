@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>nodejs 和 mongoose 完整流程 | 波波-博客</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/logo.png">
+    <meta name="description" content="欢迎，大爷儿来玩~">
+    
+    <link rel="preload" href="/assets/css/0.styles.b3b1d43e.css" as="style"><link rel="preload" href="/assets/js/app.7593c070.js" as="script"><link rel="preload" href="/assets/js/3.baf7cf9e.js" as="script"><link rel="preload" href="/assets/js/1.1698fd40.js" as="script"><link rel="preload" href="/assets/js/21.228ba475.js" as="script"><link rel="prefetch" href="/assets/js/10.c1c100cf.js"><link rel="prefetch" href="/assets/js/11.1118bce5.js"><link rel="prefetch" href="/assets/js/12.3e6738d6.js"><link rel="prefetch" href="/assets/js/13.e5e2ff03.js"><link rel="prefetch" href="/assets/js/14.2ac79aee.js"><link rel="prefetch" href="/assets/js/15.ca4eb508.js"><link rel="prefetch" href="/assets/js/16.c95082f5.js"><link rel="prefetch" href="/assets/js/17.7ccdb52a.js"><link rel="prefetch" href="/assets/js/18.8e4a0864.js"><link rel="prefetch" href="/assets/js/19.24b73eac.js"><link rel="prefetch" href="/assets/js/20.1376fedf.js"><link rel="prefetch" href="/assets/js/22.d437319f.js"><link rel="prefetch" href="/assets/js/23.2f2f3f75.js"><link rel="prefetch" href="/assets/js/24.e5051963.js"><link rel="prefetch" href="/assets/js/25.948d23a0.js"><link rel="prefetch" href="/assets/js/26.dc58c33f.js"><link rel="prefetch" href="/assets/js/27.cd276eff.js"><link rel="prefetch" href="/assets/js/28.2dfcaa29.js"><link rel="prefetch" href="/assets/js/29.aa5a862b.js"><link rel="prefetch" href="/assets/js/30.8010734c.js"><link rel="prefetch" href="/assets/js/31.db8fa042.js"><link rel="prefetch" href="/assets/js/32.10ed8057.js"><link rel="prefetch" href="/assets/js/33.0b37f0e5.js"><link rel="prefetch" href="/assets/js/34.1d44d5bc.js"><link rel="prefetch" href="/assets/js/35.e38d87c2.js"><link rel="prefetch" href="/assets/js/36.e79d0160.js"><link rel="prefetch" href="/assets/js/37.20c69fb6.js"><link rel="prefetch" href="/assets/js/38.4e7c2587.js"><link rel="prefetch" href="/assets/js/39.8520b3e1.js"><link rel="prefetch" href="/assets/js/4.4bae8dfd.js"><link rel="prefetch" href="/assets/js/40.771f4e11.js"><link rel="prefetch" href="/assets/js/41.a7bd620d.js"><link rel="prefetch" href="/assets/js/42.de9cd67c.js"><link rel="prefetch" href="/assets/js/43.e58d1482.js"><link rel="prefetch" href="/assets/js/44.64323909.js"><link rel="prefetch" href="/assets/js/45.e6ad30e5.js"><link rel="prefetch" href="/assets/js/46.fea9fa69.js"><link rel="prefetch" href="/assets/js/47.1ea149e5.js"><link rel="prefetch" href="/assets/js/48.e25580f1.js"><link rel="prefetch" href="/assets/js/49.fc6f1479.js"><link rel="prefetch" href="/assets/js/5.ccf31d26.js"><link rel="prefetch" href="/assets/js/50.3d496e1b.js"><link rel="prefetch" href="/assets/js/51.3c02737f.js"><link rel="prefetch" href="/assets/js/52.0b72fdb5.js"><link rel="prefetch" href="/assets/js/53.232f4b76.js"><link rel="prefetch" href="/assets/js/54.f4ae5c45.js"><link rel="prefetch" href="/assets/js/55.4e671976.js"><link rel="prefetch" href="/assets/js/56.34540e76.js"><link rel="prefetch" href="/assets/js/57.f6175944.js"><link rel="prefetch" href="/assets/js/58.6d89e6f8.js"><link rel="prefetch" href="/assets/js/59.93483c0b.js"><link rel="prefetch" href="/assets/js/6.533d7147.js"><link rel="prefetch" href="/assets/js/60.790c8063.js"><link rel="prefetch" href="/assets/js/61.233e116a.js"><link rel="prefetch" href="/assets/js/62.d44a314d.js"><link rel="prefetch" href="/assets/js/63.f428d124.js"><link rel="prefetch" href="/assets/js/64.cfc871eb.js"><link rel="prefetch" href="/assets/js/65.cee49a31.js"><link rel="prefetch" href="/assets/js/66.c0741df9.js"><link rel="prefetch" href="/assets/js/67.eb982667.js"><link rel="prefetch" href="/assets/js/68.e838aa03.js"><link rel="prefetch" href="/assets/js/69.733d08e5.js"><link rel="prefetch" href="/assets/js/7.fd3a1ea2.js"><link rel="prefetch" href="/assets/js/70.3b7c2052.js"><link rel="prefetch" href="/assets/js/71.18fd0876.js"><link rel="prefetch" href="/assets/js/72.3e6ce857.js"><link rel="prefetch" href="/assets/js/73.24c2ff90.js"><link rel="prefetch" href="/assets/js/74.806151bf.js"><link rel="prefetch" href="/assets/js/75.6ec9f102.js"><link rel="prefetch" href="/assets/js/76.58c2946f.js"><link rel="prefetch" href="/assets/js/77.b56b5832.js"><link rel="prefetch" href="/assets/js/78.fbda29ed.js"><link rel="prefetch" href="/assets/js/79.925c5bb3.js"><link rel="prefetch" href="/assets/js/8.35832e0c.js"><link rel="prefetch" href="/assets/js/80.cb13c58e.js"><link rel="prefetch" href="/assets/js/81.1e63a309.js"><link rel="prefetch" href="/assets/js/82.f49130e1.js"><link rel="prefetch" href="/assets/js/83.b2eac93b.js"><link rel="prefetch" href="/assets/js/84.9ee8eb4e.js"><link rel="prefetch" href="/assets/js/9.8630328b.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.b3b1d43e.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container" data-v-130b300a><div data-v-130b300a><div class="password-shadow password-wrapper-out" style="display:none;" data-v-25ba6db2 data-v-130b300a data-v-130b300a><h3 class="title" data-v-25ba6db2 data-v-25ba6db2>波波-博客</h3> <p class="description" data-v-25ba6db2 data-v-25ba6db2>欢迎，大爷儿来玩~</p> <label id="box" class="inputBox" data-v-25ba6db2 data-v-25ba6db2><input type="password" value="" data-v-25ba6db2> <span data-v-25ba6db2>Konck! Knock!</span> <button data-v-25ba6db2>OK</button></label> <div class="footer" data-v-25ba6db2 data-v-25ba6db2><span data-v-25ba6db2><i class="iconfont reco-theme" data-v-25ba6db2></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-25ba6db2>vuePress-theme-reco</a></span> <span data-v-25ba6db2><i class="iconfont reco-copyright" data-v-25ba6db2></i> <a data-v-25ba6db2><!---->
+            
+          <!---->
+          2022
+        </a></span></div></div> <div class="hide" data-v-130b300a><header class="navbar" data-v-130b300a><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">波波-博客</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><a href="/web/" class="nav-link"><i class="iconfont reco-document"></i>
+  前端
+</a></div><div class="nav-item"><a href="/backend/" class="nav-link router-link-active"><i class="iconfont reco-document"></i>
+  后端
+</a></div><div class="nav-item"><a href="/webconfig/" class="nav-link"><i class="iconfont reco-document"></i>
+  前端配置
+</a></div><div class="nav-item"><a href="/react/" class="nav-link"><i class="iconfont reco-document"></i>
+  React框架
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      原生JS
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/js/" class="nav-link"><i class="undefined"></i>
+  js基础
+</a></li><li class="dropdown-item"><!----> <a href="/jsg/" class="nav-link"><i class="undefined"></i>
+  js高级
+</a></li></ul></div></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间轴
+</a></div><div class="nav-item"><a href="/other/" class="nav-link"><i class="iconfont reco-suggestion"></i>
+  其它
+</a></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-130b300a></div> <aside class="sidebar" data-v-130b300a><div class="personal-info-wrapper" data-v-39576ba9 data-v-130b300a><!----> <!----> <div class="num" data-v-39576ba9><div data-v-39576ba9><h3 data-v-39576ba9>73</h3> <h6 data-v-39576ba9>Articles</h6></div> <div data-v-39576ba9><h3 data-v-39576ba9>0</h3> <h6 data-v-39576ba9>Tags</h6></div></div> <ul class="social-links" data-v-39576ba9></ul> <hr data-v-39576ba9></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><a href="/web/" class="nav-link"><i class="iconfont reco-document"></i>
+  前端
+</a></div><div class="nav-item"><a href="/backend/" class="nav-link router-link-active"><i class="iconfont reco-document"></i>
+  后端
+</a></div><div class="nav-item"><a href="/webconfig/" class="nav-link"><i class="iconfont reco-document"></i>
+  前端配置
+</a></div><div class="nav-item"><a href="/react/" class="nav-link"><i class="iconfont reco-document"></i>
+  React框架
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      原生JS
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/js/" class="nav-link"><i class="undefined"></i>
+  js基础
+</a></li><li class="dropdown-item"><!----> <a href="/jsg/" class="nav-link"><i class="undefined"></i>
+  js高级
+</a></li></ul></div></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间轴
+</a></div><div class="nav-item"><a href="/other/" class="nav-link"><i class="iconfont reco-suggestion"></i>
+  其它
+</a></div> <!----></nav> <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>nodeJs</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>mongoDB</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/backend/mongoDB.html" class="sidebar-link">mongodb 基础使用</a></li><li><a href="/backend/nodeAndmongoose.html" aria-current="page" class="active sidebar-link">nodejs 和 mongoose 完整流程</a></li><li><a href="/backend/BasicADMS.html" class="sidebar-link">基础的增删改查</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>MySQL</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>html5-webSocket</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-25ba6db2 data-v-130b300a><h3 class="title" data-v-25ba6db2 data-v-25ba6db2></h3> <!----> <label id="box" class="inputBox" data-v-25ba6db2 data-v-25ba6db2><input type="password" value="" data-v-25ba6db2> <span data-v-25ba6db2>Konck! Knock!</span> <button data-v-25ba6db2>OK</button></label> <div class="footer" data-v-25ba6db2 data-v-25ba6db2><span data-v-25ba6db2><i class="iconfont reco-theme" data-v-25ba6db2></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-25ba6db2>vuePress-theme-reco</a></span> <span data-v-25ba6db2><i class="iconfont reco-copyright" data-v-25ba6db2></i> <a data-v-25ba6db2><!---->
+            
+          <!---->
+          2022
+        </a></span></div></div> <div data-v-130b300a><main class="page" style="padding-right:0;"><section><div class="page-title"><h1 class="title">nodejs 和 mongoose 完整流程</h1> <div data-v-f875f3fc><!----> <!----> <i class="iconfont reco-eye" data-v-f875f3fc><span id="/backend/nodeAndmongoose.html" data-flag-title="Your Article Title" class="leancloud-visitors" data-v-f875f3fc><a class="leancloud-visitors-count" style="font-size:.9rem;font-weight:normal;color:#999;"></a></span></i> <!----></div></div> <div class="theme-reco-content content__default"><h1 id="nodejs-和-mongoose-完整流程"><a href="#nodejs-和-mongoose-完整流程" class="header-anchor">#</a> nodejs 和 mongoose 完整流程</h1> <blockquote><p><strong>导读</strong><br>
+本例使用 nodejs+mongoose 去开发使用我们的 mongodb 数据库。<br>
+我使用的 node v12.14.1、mogngoose 5.8.7<br>
+本篇会系统的整理一下在 nodejs 中使用 mongoose 去使用 mongodb 数据库，后一篇会搭配 express 框架来实现具体开发流程</p></blockquote> <h2 id="mongoose-官方文档"><a href="#mongoose-官方文档" class="header-anchor">#</a> mongoose 官方文档</h2> <blockquote><p><strong>http://www.mongoosejs.net/docs/</strong></p></blockquote> <h2 id="mongoose-安装"><a href="#mongoose-安装" class="header-anchor">#</a> mongoose 安装</h2> <div class="language- extra-class"><pre class="language-text"><code>npm i mongoose -S
+</code></pre></div><h2 id="基础使用"><a href="#基础使用" class="header-anchor">#</a> 基础使用</h2> <h4 id="连接数据库"><a href="#连接数据库" class="header-anchor">#</a> 连接数据库</h4> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 使用mongoose操作数据库</span>
+<span class="token keyword">const</span> mongoose <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;mongoose&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">//1 连接数据库</span>
+<span class="token literal-property property">连接数据库【这是在没有用户得情况下】</span> <span class="token operator">:</span><span class="token number">27017</span>默认端口可以省略
+gameinfo 是我们要连接得数据库，没有也没关系，后续插入数据后，它会自动给创建
+<span class="token keyword">const</span> app <span class="token operator">=</span> mongoose<span class="token punctuation">.</span><span class="token function">createConnection</span><span class="token punctuation">(</span><span class="token string">&quot;mongodb://127.0.0.1:27017/gameinfo &quot;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">useNewUrlParser</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span><span class="token comment">// 新的url解析器</span>
+  <span class="token literal-property property">useUnifiedTopology</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span><span class="token comment">// 使用新的解释器</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// app对象是数据库实例，通过不同事件监听得到不同结果</span>
+app<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">&quot;open&quot;</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;打开成功&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+app<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">&quot;error&quot;</span><span class="token punctuation">,</span> <span class="token parameter">err</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;打开失败&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="创建规则-schema"><a href="#创建规则-schema" class="header-anchor">#</a> 创建规则 Schema</h2> <h4 id="什么是-schema"><a href="#什么是-schema" class="header-anchor">#</a> 什么是 Schema</h4> <blockquote><p>Schema 翻译过来是 “架构图”，实际上它得作用更像是模板，也就是规范，有了 Schema 约束，那么操作数据库得人必须要遵守 Schema 规定得数据类型和字段来操作数据，不然就会操作失效甚至报错。</p></blockquote> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 假设数据库原始集合文档有这么一条</span>
+<span class="token punctuation">[</span><span class="token punctuation">{</span>
+  <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">&quot;赵家二少&quot;</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">age</span><span class="token operator">:</span> <span class="token string">&quot;20&quot;</span>
+<span class="token punctuation">}</span><span class="token punctuation">]</span>
+<span class="token comment">// 但是插入数据得人写了一条这样的文档进来</span>
+<span class="token punctuation">{</span>
+  <span class="token literal-property property">id</span><span class="token operator">:</span> <span class="token string">&quot;王洪刚&quot;</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">job</span><span class="token operator">:</span><span class="token string">&quot;测试&quot;</span>
+<span class="token punctuation">}</span>
+我们可以知道，mongodb不会对数据做检测，你存入什么类型或格式都是可以得。
+但是这样得一条和我们要得name，age字段是不统一得，后续操作也麻烦了。
+</code></pre></div><h3 id="规则类型"><a href="#规则类型" class="header-anchor">#</a> 规则类型</h3> <ul><li>String</li> <li>Number</li> <li>Date</li> <li>Boolean</li> <li>Buffer</li> <li>ObjectId</li> <li>Mixed <strong>（mongoose.Schema.Types.Mixed）</strong></li> <li>Array</li></ul> <h3 id="使用-schema-建规则"><a href="#使用-schema-建规则" class="header-anchor">#</a> 使用 Schema 建规则</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> mongoose <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;mongoose&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+在mongoose下有一个Schema构造函数
+<span class="token keyword">const</span> Schema <span class="token operator">=</span> mongoose<span class="token punctuation">.</span>Schema<span class="token punctuation">;</span>
+<span class="token comment">/*
+模型规范：
+username字段必须是字符串类型
+gender字段使用对象配置：
+其中type是类型；
+default是指，如果你存入得数据里没有该字段就给个默认得，值是unknown；
+lowercase 转成小写
+required 必须要的字段，不给就报错
+validate自定义检验
+msg如果校验不通过，则返回该提示
+*/</span>
+<span class="token keyword">const</span> Schema <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Schema</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token literal-property property">username</span><span class="token operator">:</span> String<span class="token punctuation">,</span>
+  <span class="token literal-property property">age</span><span class="token operator">:</span> Number<span class="token punctuation">,</span>
+  <span class="token literal-property property">gender</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">type</span><span class="token operator">:</span> String<span class="token punctuation">,</span>
+    <span class="token keyword">default</span><span class="token operator">:</span> <span class="token string">&quot;unknown&quot;</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">lowercase</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span><span class="token comment">//把值转为小写</span>
+    <span class="token literal-property property">required</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">msg</span><span class="token operator">:</span> <span class="token string">&quot;你该不会是个gay?&quot;</span><span class="token punctuation">,</span>
+    <span class="token function-variable function">validate</span><span class="token operator">:</span> <span class="token parameter">val</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>val <span class="token operator">&amp;&amp;</span> val<span class="token punctuation">.</span>length <span class="token operator">&gt;=</span> <span class="token number">5</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+      <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span>
+ <span class="token comment">// 强制给集合命名</span>
+  <span class="token punctuation">{</span> <span class="token literal-property property">collection</span><span class="token operator">:</span> <span class="token string">&quot;users&quot;</span> <span class="token punctuation">}</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">//你要存进去的数据key名字，必须是我规则里定义好的</span>
+<span class="token comment">//如果我们的规则里没有该字段名称的话，存不进去</span>
+创建 <span class="token operator">||</span> 选择 一个集合<span class="token punctuation">,</span>必须是数据库对象创建集合
+<span class="token keyword">const</span> Books <span class="token operator">=</span> app<span class="token punctuation">.</span><span class="token function">model</span><span class="token punctuation">(</span><span class="token string">&quot;books&quot;</span><span class="token punctuation">,</span> Schema<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p><strong>现在我们有了一个模型，用来统一规范我们的集合数据；</strong></p> <h3 id="schema-add-添加新规则"><a href="#schema-add-添加新规则" class="header-anchor">#</a> Schema.add({}) 添加新规则</h3> <div class="language-js extra-class"><pre class="language-js"><code>Schema<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token literal-property property">age</span><span class="token operator">:</span> <span class="token string">&quot;number&quot;</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="schema-remove-删除规则"><a href="#schema-remove-删除规则" class="header-anchor">#</a> Schema.remove([]) 删除规则</h3> <div class="language-js extra-class"><pre class="language-js"><code>RegisterSchema<span class="token punctuation">.</span><span class="token function">remove</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">&quot;username&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;password&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;rules&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;safes&quot;</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><div class="language-js extra-class"><pre class="language-js"><code>Schema<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token literal-property property">age</span><span class="token operator">:</span> <span class="token string">&quot;number&quot;</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="创建文档"><a href="#创建文档" class="header-anchor">#</a> 创建文档</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 连接上数据库</span>
+<span class="token keyword">const</span> mongoose <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;mongoose&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> connet <span class="token operator">=</span> <span class="token keyword">let</span> connet <span class="token operator">=</span> mongoose<span class="token punctuation">.</span><span class="token function">createConnection</span><span class="token punctuation">(</span><span class="token string">&quot;mongodb://127.0.0.1/web1810&quot;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">useNewUrlParser</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token comment">// 新的url解析器</span>
+  <span class="token literal-property property">useUnifiedTopology</span><span class="token operator">:</span> <span class="token boolean">true</span> <span class="token comment">// 使用新的解释器</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+app<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">&quot;open&quot;</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;打开成功&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+app<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">&quot;error&quot;</span><span class="token punctuation">,</span> <span class="token parameter">err</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;打开失败&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> Schema <span class="token operator">=</span> mongoose<span class="token punctuation">.</span><span class="token function">Schema</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    <span class="token literal-property property">username</span><span class="token operator">:</span><span class="token string">'string'</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">age</span><span class="token operator">:</span><span class="token string">'number'</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">gender</span><span class="token operator">:</span><span class="token string">'string'</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token comment">// 使用model建立集合</span>
+<span class="token keyword">const</span> UserModels <span class="token operator">=</span> connet<span class="token punctuation">.</span><span class="token function">model</span><span class="token punctuation">(</span><span class="token string">&quot;users&quot;</span><span class="token punctuation">,</span> Schema<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// 向users集合里插入一个文档</span>
+UserModels<span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token literal-property property">username</span><span class="token operator">:</span> <span class="token string">&quot;宋宇&quot;</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">age</span><span class="token operator">:</span> <span class="token number">20</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">gender</span><span class="token operator">:</span> <span class="token string">&quot;男&quot;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token parameter">res</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>res<span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+打印：
+<span class="token punctuation">{</span> <span class="token literal-property property">_id</span><span class="token operator">:</span> 5f7be63277ebe74da418b89d<span class="token punctuation">,</span> <span class="token literal-property property">username</span><span class="token operator">:</span> <span class="token string">'小米'</span><span class="token punctuation">,</span> <span class="token literal-property property">__v</span><span class="token operator">:</span> <span class="token number">0</span> <span class="token punctuation">}</span>
+</code></pre></div></div></section> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev"><a href="/backend/mongoDB.html" class="prev">
+            mongodb 基础使用
+          </a></span> <span class="next"><a href="/backend/BasicADMS.html">
+            基础的增删改查
+          </a></span></p></div> <div class="comments-wrapper"><!----></div> <ul class="side-bar sub-sidebar-wrapper" style="width:0;" data-v-cb1513f6></ul></main> <!----></div></div></div></div><div class="global-ui"><!----><!----><div class="kanbanniang" data-v-5775ee02><div class="banniang-container" style="display:;" data-v-5775ee02><div class="messageBox" style="right:68px;bottom:190px;display:none;" data-v-5775ee02>
+      欢迎来到 波波-博客
+    </div> <div class="operation" style="right:90px;bottom:40px;display:;" data-v-5775ee02><i class="kbnfont kbn-ban-home ban-home" data-v-5775ee02></i> <i class="kbnfont kbn-ban-message message" data-v-5775ee02></i> <i class="kbnfont kbn-ban-close close" data-v-5775ee02></i> <a target="_blank" href="https://vuepress-theme-reco.recoluan.com/views/plugins/kanbanniang.html" data-v-5775ee02><i class="kbnfont kbn-ban-info info" data-v-5775ee02></i></a> <i class="kbnfont kbn-ban-theme skin" style="display:;" data-v-5775ee02></i></div> <canvas id="banniang" width="150" height="220" class="live2d" style="right:90px;bottom:-20px;opacity:0.9;" data-v-5775ee02></canvas></div> <div class="showBanNiang" style="display:none;" data-v-5775ee02>
+    看板娘
+  </div></div><div></div></div></div>
+    <script src="/assets/js/app.7593c070.js" defer></script><script src="/assets/js/3.baf7cf9e.js" defer></script><script src="/assets/js/1.1698fd40.js" defer></script><script src="/assets/js/21.228ba475.js" defer></script>
+  </body>
+</html>

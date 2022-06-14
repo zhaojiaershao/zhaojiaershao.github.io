@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Vue3.0 Vuex 安装和使用 | 波波-博客</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/logo.png">
+    <meta name="description" content="欢迎，大爷儿来玩~">
+    
+    <link rel="preload" href="/assets/css/0.styles.b3b1d43e.css" as="style"><link rel="preload" href="/assets/js/app.7593c070.js" as="script"><link rel="preload" href="/assets/js/3.baf7cf9e.js" as="script"><link rel="preload" href="/assets/js/1.1698fd40.js" as="script"><link rel="preload" href="/assets/js/59.93483c0b.js" as="script"><link rel="prefetch" href="/assets/js/10.c1c100cf.js"><link rel="prefetch" href="/assets/js/11.1118bce5.js"><link rel="prefetch" href="/assets/js/12.3e6738d6.js"><link rel="prefetch" href="/assets/js/13.e5e2ff03.js"><link rel="prefetch" href="/assets/js/14.2ac79aee.js"><link rel="prefetch" href="/assets/js/15.ca4eb508.js"><link rel="prefetch" href="/assets/js/16.c95082f5.js"><link rel="prefetch" href="/assets/js/17.7ccdb52a.js"><link rel="prefetch" href="/assets/js/18.8e4a0864.js"><link rel="prefetch" href="/assets/js/19.24b73eac.js"><link rel="prefetch" href="/assets/js/20.1376fedf.js"><link rel="prefetch" href="/assets/js/21.228ba475.js"><link rel="prefetch" href="/assets/js/22.d437319f.js"><link rel="prefetch" href="/assets/js/23.2f2f3f75.js"><link rel="prefetch" href="/assets/js/24.e5051963.js"><link rel="prefetch" href="/assets/js/25.948d23a0.js"><link rel="prefetch" href="/assets/js/26.dc58c33f.js"><link rel="prefetch" href="/assets/js/27.cd276eff.js"><link rel="prefetch" href="/assets/js/28.2dfcaa29.js"><link rel="prefetch" href="/assets/js/29.aa5a862b.js"><link rel="prefetch" href="/assets/js/30.8010734c.js"><link rel="prefetch" href="/assets/js/31.db8fa042.js"><link rel="prefetch" href="/assets/js/32.10ed8057.js"><link rel="prefetch" href="/assets/js/33.0b37f0e5.js"><link rel="prefetch" href="/assets/js/34.1d44d5bc.js"><link rel="prefetch" href="/assets/js/35.e38d87c2.js"><link rel="prefetch" href="/assets/js/36.e79d0160.js"><link rel="prefetch" href="/assets/js/37.20c69fb6.js"><link rel="prefetch" href="/assets/js/38.4e7c2587.js"><link rel="prefetch" href="/assets/js/39.8520b3e1.js"><link rel="prefetch" href="/assets/js/4.4bae8dfd.js"><link rel="prefetch" href="/assets/js/40.771f4e11.js"><link rel="prefetch" href="/assets/js/41.a7bd620d.js"><link rel="prefetch" href="/assets/js/42.de9cd67c.js"><link rel="prefetch" href="/assets/js/43.e58d1482.js"><link rel="prefetch" href="/assets/js/44.64323909.js"><link rel="prefetch" href="/assets/js/45.e6ad30e5.js"><link rel="prefetch" href="/assets/js/46.fea9fa69.js"><link rel="prefetch" href="/assets/js/47.1ea149e5.js"><link rel="prefetch" href="/assets/js/48.e25580f1.js"><link rel="prefetch" href="/assets/js/49.fc6f1479.js"><link rel="prefetch" href="/assets/js/5.ccf31d26.js"><link rel="prefetch" href="/assets/js/50.3d496e1b.js"><link rel="prefetch" href="/assets/js/51.3c02737f.js"><link rel="prefetch" href="/assets/js/52.0b72fdb5.js"><link rel="prefetch" href="/assets/js/53.232f4b76.js"><link rel="prefetch" href="/assets/js/54.f4ae5c45.js"><link rel="prefetch" href="/assets/js/55.4e671976.js"><link rel="prefetch" href="/assets/js/56.34540e76.js"><link rel="prefetch" href="/assets/js/57.f6175944.js"><link rel="prefetch" href="/assets/js/58.6d89e6f8.js"><link rel="prefetch" href="/assets/js/6.533d7147.js"><link rel="prefetch" href="/assets/js/60.790c8063.js"><link rel="prefetch" href="/assets/js/61.233e116a.js"><link rel="prefetch" href="/assets/js/62.d44a314d.js"><link rel="prefetch" href="/assets/js/63.f428d124.js"><link rel="prefetch" href="/assets/js/64.cfc871eb.js"><link rel="prefetch" href="/assets/js/65.cee49a31.js"><link rel="prefetch" href="/assets/js/66.c0741df9.js"><link rel="prefetch" href="/assets/js/67.eb982667.js"><link rel="prefetch" href="/assets/js/68.e838aa03.js"><link rel="prefetch" href="/assets/js/69.733d08e5.js"><link rel="prefetch" href="/assets/js/7.fd3a1ea2.js"><link rel="prefetch" href="/assets/js/70.3b7c2052.js"><link rel="prefetch" href="/assets/js/71.18fd0876.js"><link rel="prefetch" href="/assets/js/72.3e6ce857.js"><link rel="prefetch" href="/assets/js/73.24c2ff90.js"><link rel="prefetch" href="/assets/js/74.806151bf.js"><link rel="prefetch" href="/assets/js/75.6ec9f102.js"><link rel="prefetch" href="/assets/js/76.58c2946f.js"><link rel="prefetch" href="/assets/js/77.b56b5832.js"><link rel="prefetch" href="/assets/js/78.fbda29ed.js"><link rel="prefetch" href="/assets/js/79.925c5bb3.js"><link rel="prefetch" href="/assets/js/8.35832e0c.js"><link rel="prefetch" href="/assets/js/80.cb13c58e.js"><link rel="prefetch" href="/assets/js/81.1e63a309.js"><link rel="prefetch" href="/assets/js/82.f49130e1.js"><link rel="prefetch" href="/assets/js/83.b2eac93b.js"><link rel="prefetch" href="/assets/js/84.9ee8eb4e.js"><link rel="prefetch" href="/assets/js/9.8630328b.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.b3b1d43e.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container" data-v-130b300a><div data-v-130b300a><div class="password-shadow password-wrapper-out" style="display:none;" data-v-25ba6db2 data-v-130b300a data-v-130b300a><h3 class="title" data-v-25ba6db2 data-v-25ba6db2>波波-博客</h3> <p class="description" data-v-25ba6db2 data-v-25ba6db2>欢迎，大爷儿来玩~</p> <label id="box" class="inputBox" data-v-25ba6db2 data-v-25ba6db2><input type="password" value="" data-v-25ba6db2> <span data-v-25ba6db2>Konck! Knock!</span> <button data-v-25ba6db2>OK</button></label> <div class="footer" data-v-25ba6db2 data-v-25ba6db2><span data-v-25ba6db2><i class="iconfont reco-theme" data-v-25ba6db2></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-25ba6db2>vuePress-theme-reco</a></span> <span data-v-25ba6db2><i class="iconfont reco-copyright" data-v-25ba6db2></i> <a data-v-25ba6db2><!---->
+            
+          <!---->
+          2022
+        </a></span></div></div> <div class="hide" data-v-130b300a><header class="navbar" data-v-130b300a><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">波波-博客</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><a href="/web/" class="nav-link router-link-active"><i class="iconfont reco-document"></i>
+  前端
+</a></div><div class="nav-item"><a href="/backend/" class="nav-link"><i class="iconfont reco-document"></i>
+  后端
+</a></div><div class="nav-item"><a href="/webconfig/" class="nav-link"><i class="iconfont reco-document"></i>
+  前端配置
+</a></div><div class="nav-item"><a href="/react/" class="nav-link"><i class="iconfont reco-document"></i>
+  React框架
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      原生JS
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/js/" class="nav-link"><i class="undefined"></i>
+  js基础
+</a></li><li class="dropdown-item"><!----> <a href="/jsg/" class="nav-link"><i class="undefined"></i>
+  js高级
+</a></li></ul></div></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间轴
+</a></div><div class="nav-item"><a href="/other/" class="nav-link"><i class="iconfont reco-suggestion"></i>
+  其它
+</a></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-130b300a></div> <aside class="sidebar" data-v-130b300a><div class="personal-info-wrapper" data-v-39576ba9 data-v-130b300a><!----> <!----> <div class="num" data-v-39576ba9><div data-v-39576ba9><h3 data-v-39576ba9>73</h3> <h6 data-v-39576ba9>Articles</h6></div> <div data-v-39576ba9><h3 data-v-39576ba9>0</h3> <h6 data-v-39576ba9>Tags</h6></div></div> <ul class="social-links" data-v-39576ba9></ul> <hr data-v-39576ba9></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><a href="/web/" class="nav-link router-link-active"><i class="iconfont reco-document"></i>
+  前端
+</a></div><div class="nav-item"><a href="/backend/" class="nav-link"><i class="iconfont reco-document"></i>
+  后端
+</a></div><div class="nav-item"><a href="/webconfig/" class="nav-link"><i class="iconfont reco-document"></i>
+  前端配置
+</a></div><div class="nav-item"><a href="/react/" class="nav-link"><i class="iconfont reco-document"></i>
+  React框架
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      原生JS
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/js/" class="nav-link"><i class="undefined"></i>
+  js基础
+</a></li><li class="dropdown-item"><!----> <a href="/jsg/" class="nav-link"><i class="undefined"></i>
+  js高级
+</a></li></ul></div></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间轴
+</a></div><div class="nav-item"><a href="/other/" class="nav-link"><i class="iconfont reco-suggestion"></i>
+  其它
+</a></div> <!----></nav> <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>请求数据方式</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>mockjs教程</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>vue教程</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/web/vue/vue_create.html" class="sidebar-link">Vue-cli脚手架创建vue项目</a></li><li><a href="/web/vue/vue2_x.html" class="sidebar-link">vue2.0版本基础</a></li><li><a href="/web/vue/vue2_router.html" class="sidebar-link">vue-router 路由</a></li><li><a href="/web/vue/vuex.html" class="sidebar-link">vuex 使用</a></li><li><a href="/web/vue/vue3_vite.html" class="sidebar-link">Vue3.0 vite脚手架 安装与使用</a></li><li><a href="/web/vue/vue3_componsition-api.html" class="sidebar-link">Vue3.0 componsition Api</a></li><li><a href="/web/vue/vue3_router.html" class="sidebar-link">vue3.0版本路由</a></li><li><a href="/web/vue/vue3_vuex.html" aria-current="page" class="active sidebar-link">Vue3.0 Vuex 安装和使用</a></li><li><a href="/web/vue/vue3_vite_ts.html" class="sidebar-link">Vue3+Vite+TypeScript 使用</a></li><li><a href="/web/vue/vue3_i_element-plus.html" class="sidebar-link">vue3.0 vite脚手架 UI库</a></li><li><a href="/web/vue/vuex_持久化存储插件.html" class="sidebar-link">Vuex 持久化存储插件</a></li><li><a href="/web/vue/error.html" class="sidebar-link">常见问题的解决方案</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>ES6教程</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>微信小程序</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>TypeScript</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-25ba6db2 data-v-130b300a><h3 class="title" data-v-25ba6db2 data-v-25ba6db2></h3> <!----> <label id="box" class="inputBox" data-v-25ba6db2 data-v-25ba6db2><input type="password" value="" data-v-25ba6db2> <span data-v-25ba6db2>Konck! Knock!</span> <button data-v-25ba6db2>OK</button></label> <div class="footer" data-v-25ba6db2 data-v-25ba6db2><span data-v-25ba6db2><i class="iconfont reco-theme" data-v-25ba6db2></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-25ba6db2>vuePress-theme-reco</a></span> <span data-v-25ba6db2><i class="iconfont reco-copyright" data-v-25ba6db2></i> <a data-v-25ba6db2><!---->
+            
+          <!---->
+          2022
+        </a></span></div></div> <div data-v-130b300a><main class="page" style="padding-right:0;"><section><div class="page-title"><h1 class="title">Vue3.0 Vuex 安装和使用</h1> <div data-v-f875f3fc><!----> <!----> <i class="iconfont reco-eye" data-v-f875f3fc><span id="/web/vue/vue3_vuex.html" data-flag-title="Your Article Title" class="leancloud-visitors" data-v-f875f3fc><a class="leancloud-visitors-count" style="font-size:.9rem;font-weight:normal;color:#999;"></a></span></i> <!----></div></div> <div class="theme-reco-content content__default"><h1 id="vue3-0-vuex-安装和使用"><a href="#vue3-0-vuex-安装和使用" class="header-anchor">#</a> Vue3.0 Vuex 安装和使用</h1> <h2 id="安装命令"><a href="#安装命令" class="header-anchor">#</a> 安装命令</h2> <div class="language-ts extra-class"><pre class="language-ts"><code>npm install vuex<span class="token decorator"><span class="token at operator">@</span><span class="token function">4</span></span><span class="token number">.0</span><span class="token number">.0</span><span class="token operator">-</span>beta<span class="token punctuation">.</span><span class="token number">4</span>
+
+#<span class="token constant">OR</span>
+
+npm install vuex<span class="token decorator"><span class="token at operator">@</span><span class="token function">next</span></span>
+</code></pre></div><h2 id="使用"><a href="#使用" class="header-anchor">#</a> 使用</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> <span class="token punctuation">{</span>
+    createStore
+<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;vuex&quot;</span><span class="token punctuation">;</span>
+<span class="token comment">//不是在生产环境debug为true</span>
+<span class="token keyword">const</span> debug <span class="token operator">=</span> process<span class="token punctuation">.</span>env<span class="token punctuation">.</span><span class="token constant">NODE_ENV</span> <span class="token operator">!==</span> <span class="token string">'production'</span><span class="token punctuation">;</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token function">createStore</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+	<span class="token literal-property property">strict</span><span class="token operator">:</span>debug<span class="token punctuation">,</span><span class="token comment">//在不是生产环境下都开启严格模式</span>
+    <span class="token literal-property property">state</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token literal-property property">is</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">mutations</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token function">hide</span><span class="token punctuation">(</span><span class="token parameter">state<span class="token punctuation">,</span> type</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token comment">// 可以接收两个参数，第一个数state数据，第二个数组件中调用store.emit('fun',type)</span>
+            state<span class="token punctuation">.</span>is <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token function">show</span><span class="token punctuation">(</span><span class="token parameter">state</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            state<span class="token punctuation">.</span>is <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">actions</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">modules</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">getters</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="组件中使用"><a href="#组件中使用" class="header-anchor">#</a> 组件中使用</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token operator">&lt;</span> template <span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>
+    h1 <span class="token operator">&gt;</span> text页 <span class="token operator">&lt;</span> <span class="token operator">/</span>h1<span class="token operator">&gt;</span> <span class="token operator">&lt;</span>
+h1 v <span class="token operator">-</span> show <span class="token operator">=</span> <span class="token string">&quot;store.state.is&quot;</span> <span class="token operator">&gt;</span> text页 <span class="token operator">&lt;</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">h1&gt; &lt; </span><span class="token regex-delimiter">/</span></span>
+template <span class="token operator">&gt;</span>
+
+    <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+        <span class="token function">setup</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">const</span> store <span class="token operator">=</span> <span class="token function">useStore</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token function">onMounted</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+                <span class="token comment">//调用 mutations 中的方法,可以传两个参数</span>
+                store<span class="token punctuation">.</span><span class="token function">commit</span><span class="token punctuation">(</span><span class="token string">&quot;hide&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;我是hide&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token function">onUnmounted</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+                <span class="token comment">//调用 mutations 中的方法</span>
+                store<span class="token punctuation">.</span><span class="token function">commit</span><span class="token punctuation">(</span><span class="token string">&quot;show&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword">return</span> <span class="token punctuation">{</span>
+                store<span class="token punctuation">,</span> <span class="token comment">// 解构</span>
+            <span class="token punctuation">}</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span> <span class="token operator">&lt;</span>
+<span class="token operator">/</span>script<span class="token operator">&gt;</span>
+</code></pre></div><h2 id="vue3-0vuex-actions"><a href="#vue3-0vuex-actions" class="header-anchor">#</a> vue3.0Vuex actions</h2> <ul><li><strong>vue3.0 使用 vuex 总体来说就是不再用 this 调用 dispatch，而是使用 store</strong></li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> <span class="token punctuation">{</span>
+    createStore
+<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;vuex&quot;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token function">createStore</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    <span class="token literal-property property">state</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token literal-property property">is</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">mutations</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token function">hide</span><span class="token punctuation">(</span><span class="token parameter">state</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            state<span class="token punctuation">.</span>is <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token function">show</span><span class="token punctuation">(</span><span class="token parameter">state</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            state<span class="token punctuation">.</span>is <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">actions</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token function">actionshow</span><span class="token punctuation">(</span><span class="token parameter">store</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            store<span class="token punctuation">.</span><span class="token function">commit</span><span class="token punctuation">(</span><span class="token string">&quot;show&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token function">actionshide</span><span class="token punctuation">(</span><span class="token parameter">store</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            store<span class="token punctuation">.</span><span class="token function">commit</span><span class="token punctuation">(</span><span class="token string">&quot;hide&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">modules</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">getters</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p><strong>组件中使用</strong></p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+    <span class="token function">setup</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">const</span> store <span class="token operator">=</span> <span class="token function">useStore</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">const</span> <span class="token function-variable function">ishide</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+            store<span class="token punctuation">.</span><span class="token function">dispatch</span><span class="token punctuation">(</span><span class="token string">&quot;actionshide&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">;</span>
+        <span class="token keyword">const</span> <span class="token function-variable function">isshow</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+            store<span class="token punctuation">.</span><span class="token function">dispatch</span><span class="token punctuation">(</span><span class="token string">&quot;actionshow&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> <span class="token punctuation">{</span>
+            store<span class="token punctuation">,</span>
+            ishide<span class="token punctuation">,</span>
+            isshow<span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span> <span class="token operator">&lt;</span>
+<span class="token operator">/</span>script<span class="token operator">&gt;</span>
+</code></pre></div></div></section> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev"><a href="/web/vue/vue3_router.html" class="prev">
+            vue3.0版本路由
+          </a></span> <span class="next"><a href="/web/vue/vue3_vite_ts.html">
+            Vue3+Vite+TypeScript 使用
+          </a></span></p></div> <div class="comments-wrapper"><!----></div> <ul class="side-bar sub-sidebar-wrapper" style="width:0;" data-v-cb1513f6></ul></main> <!----></div></div></div></div><div class="global-ui"><!----><!----><div class="kanbanniang" data-v-5775ee02><div class="banniang-container" style="display:;" data-v-5775ee02><div class="messageBox" style="right:68px;bottom:190px;display:none;" data-v-5775ee02>
+      欢迎来到 波波-博客
+    </div> <div class="operation" style="right:90px;bottom:40px;display:;" data-v-5775ee02><i class="kbnfont kbn-ban-home ban-home" data-v-5775ee02></i> <i class="kbnfont kbn-ban-message message" data-v-5775ee02></i> <i class="kbnfont kbn-ban-close close" data-v-5775ee02></i> <a target="_blank" href="https://vuepress-theme-reco.recoluan.com/views/plugins/kanbanniang.html" data-v-5775ee02><i class="kbnfont kbn-ban-info info" data-v-5775ee02></i></a> <i class="kbnfont kbn-ban-theme skin" style="display:;" data-v-5775ee02></i></div> <canvas id="banniang" width="150" height="220" class="live2d" style="right:90px;bottom:-20px;opacity:0.9;" data-v-5775ee02></canvas></div> <div class="showBanNiang" style="display:none;" data-v-5775ee02>
+    看板娘
+  </div></div><div></div></div></div>
+    <script src="/assets/js/app.7593c070.js" defer></script><script src="/assets/js/3.baf7cf9e.js" defer></script><script src="/assets/js/1.1698fd40.js" defer></script><script src="/assets/js/59.93483c0b.js" defer></script>
+  </body>
+</html>

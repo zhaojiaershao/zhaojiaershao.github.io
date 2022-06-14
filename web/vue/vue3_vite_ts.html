@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Vue3+Vite+TypeScript 使用 | 波波-博客</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/logo.png">
+    <meta name="description" content="欢迎，大爷儿来玩~">
+    
+    <link rel="preload" href="/assets/css/0.styles.b3b1d43e.css" as="style"><link rel="preload" href="/assets/js/app.7593c070.js" as="script"><link rel="preload" href="/assets/js/3.baf7cf9e.js" as="script"><link rel="preload" href="/assets/js/1.1698fd40.js" as="script"><link rel="preload" href="/assets/js/58.6d89e6f8.js" as="script"><link rel="prefetch" href="/assets/js/10.c1c100cf.js"><link rel="prefetch" href="/assets/js/11.1118bce5.js"><link rel="prefetch" href="/assets/js/12.3e6738d6.js"><link rel="prefetch" href="/assets/js/13.e5e2ff03.js"><link rel="prefetch" href="/assets/js/14.2ac79aee.js"><link rel="prefetch" href="/assets/js/15.ca4eb508.js"><link rel="prefetch" href="/assets/js/16.c95082f5.js"><link rel="prefetch" href="/assets/js/17.7ccdb52a.js"><link rel="prefetch" href="/assets/js/18.8e4a0864.js"><link rel="prefetch" href="/assets/js/19.24b73eac.js"><link rel="prefetch" href="/assets/js/20.1376fedf.js"><link rel="prefetch" href="/assets/js/21.228ba475.js"><link rel="prefetch" href="/assets/js/22.d437319f.js"><link rel="prefetch" href="/assets/js/23.2f2f3f75.js"><link rel="prefetch" href="/assets/js/24.e5051963.js"><link rel="prefetch" href="/assets/js/25.948d23a0.js"><link rel="prefetch" href="/assets/js/26.dc58c33f.js"><link rel="prefetch" href="/assets/js/27.cd276eff.js"><link rel="prefetch" href="/assets/js/28.2dfcaa29.js"><link rel="prefetch" href="/assets/js/29.aa5a862b.js"><link rel="prefetch" href="/assets/js/30.8010734c.js"><link rel="prefetch" href="/assets/js/31.db8fa042.js"><link rel="prefetch" href="/assets/js/32.10ed8057.js"><link rel="prefetch" href="/assets/js/33.0b37f0e5.js"><link rel="prefetch" href="/assets/js/34.1d44d5bc.js"><link rel="prefetch" href="/assets/js/35.e38d87c2.js"><link rel="prefetch" href="/assets/js/36.e79d0160.js"><link rel="prefetch" href="/assets/js/37.20c69fb6.js"><link rel="prefetch" href="/assets/js/38.4e7c2587.js"><link rel="prefetch" href="/assets/js/39.8520b3e1.js"><link rel="prefetch" href="/assets/js/4.4bae8dfd.js"><link rel="prefetch" href="/assets/js/40.771f4e11.js"><link rel="prefetch" href="/assets/js/41.a7bd620d.js"><link rel="prefetch" href="/assets/js/42.de9cd67c.js"><link rel="prefetch" href="/assets/js/43.e58d1482.js"><link rel="prefetch" href="/assets/js/44.64323909.js"><link rel="prefetch" href="/assets/js/45.e6ad30e5.js"><link rel="prefetch" href="/assets/js/46.fea9fa69.js"><link rel="prefetch" href="/assets/js/47.1ea149e5.js"><link rel="prefetch" href="/assets/js/48.e25580f1.js"><link rel="prefetch" href="/assets/js/49.fc6f1479.js"><link rel="prefetch" href="/assets/js/5.ccf31d26.js"><link rel="prefetch" href="/assets/js/50.3d496e1b.js"><link rel="prefetch" href="/assets/js/51.3c02737f.js"><link rel="prefetch" href="/assets/js/52.0b72fdb5.js"><link rel="prefetch" href="/assets/js/53.232f4b76.js"><link rel="prefetch" href="/assets/js/54.f4ae5c45.js"><link rel="prefetch" href="/assets/js/55.4e671976.js"><link rel="prefetch" href="/assets/js/56.34540e76.js"><link rel="prefetch" href="/assets/js/57.f6175944.js"><link rel="prefetch" href="/assets/js/59.93483c0b.js"><link rel="prefetch" href="/assets/js/6.533d7147.js"><link rel="prefetch" href="/assets/js/60.790c8063.js"><link rel="prefetch" href="/assets/js/61.233e116a.js"><link rel="prefetch" href="/assets/js/62.d44a314d.js"><link rel="prefetch" href="/assets/js/63.f428d124.js"><link rel="prefetch" href="/assets/js/64.cfc871eb.js"><link rel="prefetch" href="/assets/js/65.cee49a31.js"><link rel="prefetch" href="/assets/js/66.c0741df9.js"><link rel="prefetch" href="/assets/js/67.eb982667.js"><link rel="prefetch" href="/assets/js/68.e838aa03.js"><link rel="prefetch" href="/assets/js/69.733d08e5.js"><link rel="prefetch" href="/assets/js/7.fd3a1ea2.js"><link rel="prefetch" href="/assets/js/70.3b7c2052.js"><link rel="prefetch" href="/assets/js/71.18fd0876.js"><link rel="prefetch" href="/assets/js/72.3e6ce857.js"><link rel="prefetch" href="/assets/js/73.24c2ff90.js"><link rel="prefetch" href="/assets/js/74.806151bf.js"><link rel="prefetch" href="/assets/js/75.6ec9f102.js"><link rel="prefetch" href="/assets/js/76.58c2946f.js"><link rel="prefetch" href="/assets/js/77.b56b5832.js"><link rel="prefetch" href="/assets/js/78.fbda29ed.js"><link rel="prefetch" href="/assets/js/79.925c5bb3.js"><link rel="prefetch" href="/assets/js/8.35832e0c.js"><link rel="prefetch" href="/assets/js/80.cb13c58e.js"><link rel="prefetch" href="/assets/js/81.1e63a309.js"><link rel="prefetch" href="/assets/js/82.f49130e1.js"><link rel="prefetch" href="/assets/js/83.b2eac93b.js"><link rel="prefetch" href="/assets/js/84.9ee8eb4e.js"><link rel="prefetch" href="/assets/js/9.8630328b.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.b3b1d43e.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container" data-v-130b300a><div data-v-130b300a><div class="password-shadow password-wrapper-out" style="display:none;" data-v-25ba6db2 data-v-130b300a data-v-130b300a><h3 class="title" data-v-25ba6db2 data-v-25ba6db2>波波-博客</h3> <p class="description" data-v-25ba6db2 data-v-25ba6db2>欢迎，大爷儿来玩~</p> <label id="box" class="inputBox" data-v-25ba6db2 data-v-25ba6db2><input type="password" value="" data-v-25ba6db2> <span data-v-25ba6db2>Konck! Knock!</span> <button data-v-25ba6db2>OK</button></label> <div class="footer" data-v-25ba6db2 data-v-25ba6db2><span data-v-25ba6db2><i class="iconfont reco-theme" data-v-25ba6db2></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-25ba6db2>vuePress-theme-reco</a></span> <span data-v-25ba6db2><i class="iconfont reco-copyright" data-v-25ba6db2></i> <a data-v-25ba6db2><!---->
+            
+          <!---->
+          2022
+        </a></span></div></div> <div class="hide" data-v-130b300a><header class="navbar" data-v-130b300a><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">波波-博客</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><a href="/web/" class="nav-link router-link-active"><i class="iconfont reco-document"></i>
+  前端
+</a></div><div class="nav-item"><a href="/backend/" class="nav-link"><i class="iconfont reco-document"></i>
+  后端
+</a></div><div class="nav-item"><a href="/webconfig/" class="nav-link"><i class="iconfont reco-document"></i>
+  前端配置
+</a></div><div class="nav-item"><a href="/react/" class="nav-link"><i class="iconfont reco-document"></i>
+  React框架
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      原生JS
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/js/" class="nav-link"><i class="undefined"></i>
+  js基础
+</a></li><li class="dropdown-item"><!----> <a href="/jsg/" class="nav-link"><i class="undefined"></i>
+  js高级
+</a></li></ul></div></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间轴
+</a></div><div class="nav-item"><a href="/other/" class="nav-link"><i class="iconfont reco-suggestion"></i>
+  其它
+</a></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-130b300a></div> <aside class="sidebar" data-v-130b300a><div class="personal-info-wrapper" data-v-39576ba9 data-v-130b300a><!----> <!----> <div class="num" data-v-39576ba9><div data-v-39576ba9><h3 data-v-39576ba9>73</h3> <h6 data-v-39576ba9>Articles</h6></div> <div data-v-39576ba9><h3 data-v-39576ba9>0</h3> <h6 data-v-39576ba9>Tags</h6></div></div> <ul class="social-links" data-v-39576ba9></ul> <hr data-v-39576ba9></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><a href="/web/" class="nav-link router-link-active"><i class="iconfont reco-document"></i>
+  前端
+</a></div><div class="nav-item"><a href="/backend/" class="nav-link"><i class="iconfont reco-document"></i>
+  后端
+</a></div><div class="nav-item"><a href="/webconfig/" class="nav-link"><i class="iconfont reco-document"></i>
+  前端配置
+</a></div><div class="nav-item"><a href="/react/" class="nav-link"><i class="iconfont reco-document"></i>
+  React框架
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      原生JS
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/js/" class="nav-link"><i class="undefined"></i>
+  js基础
+</a></li><li class="dropdown-item"><!----> <a href="/jsg/" class="nav-link"><i class="undefined"></i>
+  js高级
+</a></li></ul></div></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间轴
+</a></div><div class="nav-item"><a href="/other/" class="nav-link"><i class="iconfont reco-suggestion"></i>
+  其它
+</a></div> <!----></nav> <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>请求数据方式</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>mockjs教程</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>vue教程</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/web/vue/vue_create.html" class="sidebar-link">Vue-cli脚手架创建vue项目</a></li><li><a href="/web/vue/vue2_x.html" class="sidebar-link">vue2.0版本基础</a></li><li><a href="/web/vue/vue2_router.html" class="sidebar-link">vue-router 路由</a></li><li><a href="/web/vue/vuex.html" class="sidebar-link">vuex 使用</a></li><li><a href="/web/vue/vue3_vite.html" class="sidebar-link">Vue3.0 vite脚手架 安装与使用</a></li><li><a href="/web/vue/vue3_componsition-api.html" class="sidebar-link">Vue3.0 componsition Api</a></li><li><a href="/web/vue/vue3_router.html" class="sidebar-link">vue3.0版本路由</a></li><li><a href="/web/vue/vue3_vuex.html" class="sidebar-link">Vue3.0 Vuex 安装和使用</a></li><li><a href="/web/vue/vue3_vite_ts.html" aria-current="page" class="active sidebar-link">Vue3+Vite+TypeScript 使用</a></li><li><a href="/web/vue/vue3_i_element-plus.html" class="sidebar-link">vue3.0 vite脚手架 UI库</a></li><li><a href="/web/vue/vuex_持久化存储插件.html" class="sidebar-link">Vuex 持久化存储插件</a></li><li><a href="/web/vue/error.html" class="sidebar-link">常见问题的解决方案</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>ES6教程</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>微信小程序</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>TypeScript</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-25ba6db2 data-v-130b300a><h3 class="title" data-v-25ba6db2 data-v-25ba6db2></h3> <!----> <label id="box" class="inputBox" data-v-25ba6db2 data-v-25ba6db2><input type="password" value="" data-v-25ba6db2> <span data-v-25ba6db2>Konck! Knock!</span> <button data-v-25ba6db2>OK</button></label> <div class="footer" data-v-25ba6db2 data-v-25ba6db2><span data-v-25ba6db2><i class="iconfont reco-theme" data-v-25ba6db2></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-25ba6db2>vuePress-theme-reco</a></span> <span data-v-25ba6db2><i class="iconfont reco-copyright" data-v-25ba6db2></i> <a data-v-25ba6db2><!---->
+            
+          <!---->
+          2022
+        </a></span></div></div> <div data-v-130b300a><main class="page" style="padding-right:0;"><section><div class="page-title"><h1 class="title">Vue3+Vite+TypeScript 使用</h1> <div data-v-f875f3fc><!----> <i class="iconfont reco-date" data-v-f875f3fc><span data-v-f875f3fc>12/18/2020</span></i> <i class="iconfont reco-eye" data-v-f875f3fc><span id="/web/vue/vue3_vite_ts.html" data-flag-title="Your Article Title" class="leancloud-visitors" data-v-f875f3fc><a class="leancloud-visitors-count" style="font-size:.9rem;font-weight:normal;color:#999;"></a></span></i> <!----></div></div> <div class="theme-reco-content content__default"><h1 id="vue3-vite-typescript-使用"><a href="#vue3-vite-typescript-使用" class="header-anchor">#</a> Vue3+Vite+TypeScript 使用</h1> <h2 id="安装typescript"><a href="#安装typescript" class="header-anchor">#</a> 安装TypeScript</h2> <blockquote><p>npm install typescript -D</p></blockquote> <p><strong>初始化<code>tsconfig.json</code></strong></p> <blockquote><p>npx tsc --init</p></blockquote> <details class="custom-block details"><summary>tsconfig.js配置说明</summary> <div class="language-js extra-class"><pre class="language-js"><code><span class="token punctuation">{</span>
+  <span class="token string-property property">&quot;compilerOptions&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token comment">/* Basic Options */</span>
+    <span class="token string-property property">&quot;target&quot;</span><span class="token operator">:</span> <span class="token string">&quot;es5&quot;</span> <span class="token comment">/* target用于指定编译之后的版本目标: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017', 'ES2018', 'ES2019' or 'ESNEXT'. */</span><span class="token punctuation">,</span>
+    <span class="token string-property property">&quot;module&quot;</span><span class="token operator">:</span> <span class="token string">&quot;commonjs&quot;</span> <span class="token comment">/* 用来指定要使用的模块标准: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', or 'ESNext'. */</span><span class="token punctuation">,</span>
+    <span class="token string-property property">&quot;lib&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;es6&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;dom&quot;</span><span class="token punctuation">]</span> <span class="token comment">/* lib用于指定要包含在编译中的库文件 */</span><span class="token punctuation">,</span>
+    <span class="token string-property property">&quot;allowJs&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>                       <span class="token comment">/* allowJs设置的值为true或false，用来指定是否允许编译js文件，默认是false，即不编译js文件 */</span>
+    <span class="token string-property property">&quot;checkJs&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>                       <span class="token comment">/* checkJs的值为true或false，用来指定是否检查和报告js文件中的错误，默认是false */</span>
+    <span class="token string-property property">&quot;jsx&quot;</span><span class="token operator">:</span> <span class="token string">&quot;preserve&quot;</span><span class="token punctuation">,</span>                     <span class="token comment">/* 指定jsx代码用于的开发环境: 'preserve', 'react-native', or 'react'. */</span>
+    <span class="token string-property property">&quot;declaration&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>                   <span class="token comment">/* declaration的值为true或false，用来指定是否在编译的时候生成相应的&quot;.d.ts&quot;声明文件。如果设为true，编译每个ts文件之后会生成一个js文件和一个声明文件。但是declaration和allowJs不能同时设为true */</span>
+    <span class="token string-property property">&quot;declarationMap&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>                <span class="token comment">/* 值为true或false，指定是否为声明文件.d.ts生成map文件 */</span>
+    <span class="token string-property property">&quot;sourceMap&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>                     <span class="token comment">/* sourceMap的值为true或false，用来指定编译时是否生成.map文件 */</span>
+    <span class="token string-property property">&quot;outFile&quot;</span><span class="token operator">:</span> <span class="token string">&quot;./&quot;</span><span class="token punctuation">,</span>                       <span class="token comment">/* outFile用于指定将输出文件合并为一个文件，它的值为一个文件路径名。比如设置为&quot;./dist/main.js&quot;，则输出的文件为一个main.js文件。但是要注意，只有设置module的值为amd和system模块时才支持这个配置 */</span>
+    <span class="token string-property property">&quot;outDir&quot;</span><span class="token operator">:</span> <span class="token string">&quot;./&quot;</span><span class="token punctuation">,</span>                        <span class="token comment">/* outDir用来指定输出文件夹，值为一个文件夹路径字符串，输出的文件都将放置在这个文件夹 */</span>
+    <span class="token string-property property">&quot;rootDir&quot;</span><span class="token operator">:</span> <span class="token string">&quot;./&quot;</span><span class="token punctuation">,</span>                       <span class="token comment">/* 用来指定编译文件的根目录，编译器会在根目录查找入口文件，如果编译器发现以rootDir的值作为根目录查找入口文件并不会把所有文件加载进去的话会报错，但是不会停止编译 */</span>
+    <span class="token string-property property">&quot;composite&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>                     <span class="token comment">/* 是否编译构建引用项目  */</span>
+    <span class="token string-property property">&quot;incremental&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>                   <span class="token comment">/* Enable incremental compilation */</span>
+    <span class="token string-property property">&quot;tsBuildInfoFile&quot;</span><span class="token operator">:</span> <span class="token string">&quot;./&quot;</span><span class="token punctuation">,</span>               <span class="token comment">/* Specify file to store incremental compilation information */</span>
+    <span class="token string-property property">&quot;removeComments&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>                <span class="token comment">/* removeComments的值为true或false，用于指定是否将编译后的文件中的注释删掉，设为true的话即删掉注释，默认为false */</span>
+    <span class="token string-property property">&quot;noEmit&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>                        <span class="token comment">/* 不生成编译文件，这个一般比较少用 */</span>
+    <span class="token string-property property">&quot;importHelpers&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>                 <span class="token comment">/* importHelpers的值为true或false，指定是否引入tslib里的辅助工具函数，默认为false */</span>
+    <span class="token string-property property">&quot;downlevelIteration&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>            <span class="token comment">/* 当target为'ES5' or 'ES3'时，为'for-of', spread, and destructuring'中的迭代器提供完全支持 */</span>
+    <span class="token string-property property">&quot;isolatedModules&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>               <span class="token comment">/* isolatedModules的值为true或false，指定是否将每个文件作为单独的模块，默认为true，它不可以和declaration同时设定 */</span>
+
+    <span class="token comment">/* Strict Type-Checking Options */</span>
+    <span class="token string-property property">&quot;strict&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span> <span class="token comment">/* strict的值为true或false，用于指定是否启动所有类型检查，如果设为true则会同时开启下面这几个严格类型检查，默认为false */</span><span class="token punctuation">,</span>
+    <span class="token string-property property">&quot;noImplicitAny&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>                 <span class="token comment">/* noImplicitAny的值为true或false，如果我们没有为一些值设置明确的类型，编译器会默认认为这个值为any，如果noImplicitAny的值为true的话。则没有明确的类型会报错。默认值为false */</span>
+    <span class="token string-property property">&quot;strictNullChecks&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>              <span class="token comment">/* strictNullChecks为true时，null和undefined值不能赋给非这两种类型的值，别的类型也不能赋给他们，除了any类型。还有个例外就是undefined可以赋值给void类型 */</span>
+    <span class="token string-property property">&quot;strictFunctionTypes&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>           <span class="token comment">/* strictFunctionTypes的值为true或false，用于指定是否使用函数参数双向协变检查 */</span>
+    <span class="token string-property property">&quot;strictBindCallApply&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>           <span class="token comment">/* 设为true后会对bind、call和apply绑定的方法的参数的检测是严格检测的 */</span>
+    <span class="token string-property property">&quot;strictPropertyInitialization&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>  <span class="token comment">/* 设为true后会检查类的非undefined属性是否已经在构造函数里初始化，如果要开启这项，需要同时开启strictNullChecks，默认为false */</span>
+   <span class="token string-property property">&quot;noImplicitThis&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>                <span class="token comment">/* 当this表达式的值为any类型的时候，生成一个错误 */</span>
+    <span class="token string-property property">&quot;alwaysStrict&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>                  <span class="token comment">/* alwaysStrict的值为true或false，指定始终以严格模式检查每个模块，并且在编译之后的js文件中加入&quot;use strict&quot;字符串，用来告诉浏览器该js为严格模式 */</span>
+
+    <span class="token comment">/* Additional Checks */</span>
+    <span class="token string-property property">&quot;noUnusedLocals&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>                <span class="token comment">/* 用于检查是否有定义了但是没有使用的变量，对于这一点的检测，使用eslint可以在你书写代码的时候做提示，你可以配合使用。它的默认值为false */</span>
+    <span class="token string-property property">&quot;noUnusedParameters&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>            <span class="token comment">/* 用于检查是否有在函数体中没有使用的参数，这个也可以配合eslint来做检查，默认为false */</span>
+    <span class="token string-property property">&quot;noImplicitReturns&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>             <span class="token comment">/* 用于检查函数是否有返回值，设为true后，如果函数没有返回值则会提示，默认为false */</span>
+    <span class="token string-property property">&quot;noFallthroughCasesInSwitch&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>    <span class="token comment">/* 用于检查switch中是否有case没有使用break跳出switch，默认为false */</span>
+
+    <span class="token comment">/* Module Resolution Options */</span>
+    <span class="token string-property property">&quot;moduleResolution&quot;</span><span class="token operator">:</span> <span class="token string">&quot;node&quot;</span><span class="token punctuation">,</span>            <span class="token comment">/* 用于选择模块解析策略，有'node'和'classic'两种类型' */</span>
+    <span class="token string-property property">&quot;baseUrl&quot;</span><span class="token operator">:</span> <span class="token string">&quot;./&quot;</span><span class="token punctuation">,</span>                       <span class="token comment">/* baseUrl用于设置解析非相对模块名称的基本目录，相对模块不会受baseUrl的影响 */</span>
+    <span class="token string-property property">&quot;paths&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>                           <span class="token comment">/* 用于设置模块名称到基于baseUrl的路径映射 */</span>
+    <span class="token string-property property">&quot;rootDirs&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>                        <span class="token comment">/* rootDirs可以指定一个路径列表，在构建时编译器会将这个路径列表中的路径的内容都放到一个文件夹中 */</span>
+    <span class="token string-property property">&quot;typeRoots&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>                       <span class="token comment">/* typeRoots用来指定声明文件或文件夹的路径列表，如果指定了此项，则只有在这里列出的声明文件才会被加载 */</span>
+    <span class="token string-property property">&quot;types&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>                           <span class="token comment">/* types用来指定需要包含的模块，只有在这里列出的模块的声明文件才会被加载进来 */</span>
+    <span class="token string-property property">&quot;allowSyntheticDefaultImports&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>  <span class="token comment">/* 用来指定允许从没有默认导出的模块中默认导入 */</span>
+    <span class="token string-property property">&quot;esModuleInterop&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span> <span class="token comment">/* 通过为导入内容创建命名空间，实现CommonJS和ES模块之间的互操作性 */</span><span class="token punctuation">,</span>
+    <span class="token string-property property">&quot;preserveSymlinks&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>              <span class="token comment">/* 不把符号链接解析为其真实路径，具体可以了解下webpack和nodejs的symlink相关知识 */</span>
+
+    <span class="token comment">/* Source Map Options */</span>
+    <span class="token string-property property">&quot;sourceRoot&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>                      <span class="token comment">/* sourceRoot用于指定调试器应该找到TypeScript文件而不是源文件位置，这个值会被写进.map文件里 */</span>
+    <span class="token string-property property">&quot;mapRoot&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>                         <span class="token comment">/* mapRoot用于指定调试器找到映射文件而非生成文件的位置，指定map文件的根路径，该选项会影响.map文件中的sources属性 */</span>
+    <span class="token string-property property">&quot;inlineSourceMap&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>               <span class="token comment">/* 指定是否将map文件的内容和js文件编译在同一个js文件中，如果设为true，则map的内容会以//# sourceMappingURL=然后拼接base64字符串的形式插入在js文件底部 */</span>
+    <span class="token string-property property">&quot;inlineSources&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>                 <span class="token comment">/* 用于指定是否进一步将.ts文件的内容也包含到输入文件中 */</span>
+
+    <span class="token comment">/* Experimental Options */</span>
+    <span class="token string-property property">&quot;experimentalDecorators&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span> <span class="token comment">/* 用于指定是否启用实验性的装饰器特性 */</span>
+    <span class="token string-property property">&quot;emitDecoratorMetadata&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>         <span class="token comment">/* 用于指定是否为装饰器提供元数据支持，关于元数据，也是ES6的新标准，可以通过Reflect提供的静态方法获取元数据，如果需要使用Reflect的一些方法，需要引入ES2015.Reflect这个库 */</span>
+  <span class="token punctuation">}</span>
+  <span class="token string-property property">&quot;files&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token comment">// files可以配置一个数组列表，里面包含指定文件的相对或绝对路径，编译器在编译的时候只会编译包含在files中列出的文件，如果不指定，则取决于有没有设置include选项，如果没有include选项，则默认会编译根目录以及所有子目录中的文件。这里列出的路径必须是指定文件，而不是某个文件夹，而且不能使用* ? **/ 等通配符</span>
+  <span class="token string-property property">&quot;include&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>  <span class="token comment">// include也可以指定要编译的路径列表，但是和files的区别在于，这里的路径可以是文件夹，也可以是文件，可以使用相对和绝对路径，而且可以使用通配符，比如&quot;./src&quot;即表示要编译src文件夹下的所有文件以及子文件夹的文件</span>
+  <span class="token string-property property">&quot;exclude&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>  <span class="token comment">// exclude表示要排除的、不编译的文件，它也可以指定一个列表，规则和include一样，可以是文件或文件夹，可以是相对路径或绝对路径，可以使用通配符</span>
+  <span class="token string-property property">&quot;extends&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>   <span class="token comment">// extends可以通过指定一个其他的tsconfig.json文件路径，来继承这个配置文件里的配置，继承来的文件的配置会覆盖当前文件定义的配置。TS在3.2版本开始，支持继承一个来自Node.js包的tsconfig.json配置文件</span>
+  <span class="token string-property property">&quot;compileOnSave&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>  <span class="token comment">// compileOnSave的值是true或false，如果设为true，在我们编辑了项目中的文件保存的时候，编辑器会根据tsconfig.json中的配置重新生成文件，不过这个要编辑器支持</span>
+  <span class="token string-property property">&quot;references&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>  <span class="token comment">// 一个对象数组，指定要引用的项目</span>
+<span class="token punctuation">}</span>
+</code></pre></div></details> <p><strong>将main.js修改为main.ts,同时将index.html里面的引用也修改为main.ts,</strong></p> <div class="custom-block tip"><p class="title"></p><p>修改完之后，重启就可以访问项目了。虽然这样配置是可以了，但是打开<code>main.ts</code>会发现<code>import App from App.vue</code>会报错:<code>Cannot find module './App.vue' or its corresponding type declarations.</code>,这是因为现在<code>ts</code>还没有识别<code>vue</code>文件，需要进行下面的配置:</p></div><p><strong>在项目根目录添加<code>shim.d.ts</code>文件</strong></p> <div class="language-js extra-class"><pre class="language-js"><code>declare module <span class="token string">&quot;*.vue&quot;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">import</span> <span class="token punctuation">{</span> Component <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;vue&quot;</span><span class="token punctuation">;</span>
+  <span class="token keyword">const</span> <span class="token literal-property property">component</span><span class="token operator">:</span> Component<span class="token punctuation">;</span>
+  <span class="token keyword">export</span> <span class="token keyword">default</span> component<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><strong>在根目录添加source.d.ts文件</strong></p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// (优化编译器提示，声明静态资源文件)</span>
+declare <span class="token keyword">const</span> <span class="token literal-property property">React</span><span class="token operator">:</span> string<span class="token punctuation">;</span>
+declare module <span class="token string">'*.json'</span><span class="token punctuation">;</span>
+declare module <span class="token string">'*.png'</span><span class="token punctuation">;</span>
+declare module <span class="token string">'*.jpg'</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="然后在script-里添加-lang-ts"><a href="#然后在script-里添加-lang-ts" class="header-anchor">#</a> 然后在script 里添加 lang=“ts”</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token operator">&lt;</span>template<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>img alt<span class="token operator">=</span><span class="token string">&quot;Vue logo&quot;</span> src<span class="token operator">=</span><span class="token string">&quot;./assets/logo.png&quot;</span> <span class="token operator">/</span><span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>HelloWorld msg<span class="token operator">=</span><span class="token string">&quot;Hello Vue 3.0 + Vite&quot;</span> <span class="token operator">/</span><span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>template<span class="token operator">&gt;</span>
+
+<span class="token operator">&lt;</span>script lang<span class="token operator">=</span><span class="token string">&quot;ts&quot;</span><span class="token operator">&gt;</span>
+<span class="token keyword">import</span> HelloWorld <span class="token keyword">from</span> <span class="token string">'./components/HelloWorld.vue'</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">'App'</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">components</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    HelloWorld
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span>
+</code></pre></div><h2 id="vite-config-ts文件-配置"><a href="#vite-config-ts文件-配置" class="header-anchor">#</a> vite.config.ts文件 配置</h2> <p><strong>在项目中创建一个 vite.config.js 或 vite.config.ts 文件。如果在当前工作目录中找到 Vite，它将自动使用它。</strong></p> <blockquote><p><strong>官网 config.ts 配置参考</strong>:https://github.com/vitejs/vite/blob/master/src/node/config.ts</p></blockquote> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> type <span class="token punctuation">{</span> UserConfig <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;vite&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> path <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;path&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> <span class="token literal-property property">viteConfig</span><span class="token operator">:</span> UserConfig <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token comment">/* 端口号 */</span>
+  <span class="token literal-property property">port</span><span class="token operator">:</span> <span class="token number">3555</span><span class="token punctuation">,</span>
+  <span class="token comment">/* hostname */</span>
+  <span class="token literal-property property">hostname</span><span class="token operator">:</span> <span class="token string">&quot;localhost&quot;</span><span class="token punctuation">,</span>
+  <span class="token comment">/* 运行自动打开浏览器 */</span>
+  <span class="token literal-property property">open</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+  <span class="token comment">//   alias: {</span>
+  <span class="token comment">//     &quot;/@/&quot;: path.resolve(__dirname, &quot;./src&quot;),</span>
+  <span class="token comment">//     &quot;/@views/&quot;: path.resolve(__dirname, &quot;./src/views&quot;),</span>
+  <span class="token comment">//     &quot;/@components/&quot;: path.resolve(__dirname, &quot;./src/components&quot;),</span>
+  <span class="token comment">//     &quot;/@utils/&quot;: path.resolve(__dirname, &quot;./src/utils&quot;),</span>
+  <span class="token comment">//   },</span>
+  <span class="token comment">// vite使用proxy代理解决跨域</span>
+  <span class="token comment">//   proxy: {</span>
+  <span class="token comment">//     &quot;/api&quot;: {</span>
+  <span class="token comment">//       target: &quot;https://uni937d4b0-6cc760.service.tcloudbase.com&quot;,</span>
+  <span class="token comment">//       changeOrigin: true,</span>
+  <span class="token comment">//       rewrite: (path) =&gt; path.replace(/^\/api/, &quot;&quot;),</span>
+  <span class="token comment">//     },</span>
+  <span class="token comment">//   },</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> viteConfig<span class="token punctuation">;</span>
+</code></pre></div><div class="custom-block tip"><p class="title"></p><p>添加完以后项目需要进行重启才能看到效果</p></div><p><strong>新建 api 文件夹</strong></p> <blockquote><p>引入 axios
+npm install axios -S</p></blockquote> <p>在 api 文件夹创建 axios.ts 引入 axios,并且把 axios baseURL 设置为: ‘/api’,解决跨域</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> axios <span class="token keyword">from</span> <span class="token string">&quot;axios&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> request <span class="token operator">=</span> axios<span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token literal-property property">baseURL</span><span class="token operator">:</span> <span class="token string">&quot;http://localhost:3000/&quot;</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 请求拦截器</span>
+request<span class="token punctuation">.</span>interceptors<span class="token punctuation">.</span>request<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">config</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> config<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// 相应拦截器</span>
+request<span class="token punctuation">.</span>interceptors<span class="token punctuation">.</span>response<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">response</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> response<span class="token punctuation">.</span>data<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> request<span class="token punctuation">;</span>
+</code></pre></div><p><strong>跨域解决了,外部接口就可以使用了,我使用的是 unicloud 的云函数 url</strong></p> <p><strong>在 api 文件夹,新建 index.ts,可以写后端接口了</strong></p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> instance <span class="token keyword">from</span> <span class="token string">&quot;./axios&quot;</span><span class="token punctuation">;</span>
+<span class="token comment">// 获取首页新闻数据</span>
+<span class="token keyword">export</span> <span class="token keyword">const</span> <span class="token function-variable function">getBannerList</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token function">instance</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    <span class="token literal-property property">url</span><span class="token operator">:</span> <span class="token string">&quot;/bannerList&quot;</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  getBannerList<span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">-</span>
+<span class="token keyword">import</span> request <span class="token keyword">from</span> <span class="token string">'./axios'</span>
+<span class="token comment">// 获取首页新闻数据</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+	<span class="token function-variable function">getNewsList</span><span class="token operator">:</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+		<span class="token keyword">return</span> <span class="token function">request</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+		    <span class="token literal-property property">url</span><span class="token operator">:</span><span class="token string">'/newsList'</span><span class="token punctuation">,</span>
+		<span class="token punctuation">}</span><span class="token punctuation">)</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="vite-config-js文件-配置"><a href="#vite-config-js文件-配置" class="header-anchor">#</a> vite.config.js文件 配置</h2> <p><strong>总的配置</strong></p> <ul><li>https://blog.csdn.net/qq_42708634/article/details/108028848</li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> path <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'path'</span><span class="token punctuation">)</span>
+<span class="token comment">// vite.config.js # or vite.config.ts</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>path<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span> <span class="token string">'./src'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+   <span class="token comment">/**
+   * 在生产中服务时的基本公共路径。
+   * @default '/'
+   */</span>
+  <span class="token literal-property property">base</span><span class="token operator">:</span> <span class="token string">'/'</span><span class="token punctuation">,</span>
+  <span class="token comment">/**
+   * 与“根”相关的目录，构建输出将放在其中。如果目录存在，它将在构建之前被删除。
+   * @default 'dist'
+   */</span>
+  <span class="token literal-property property">outDir</span><span class="token operator">:</span> <span class="token string">'target'</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">port</span><span class="token operator">:</span> <span class="token number">3000</span><span class="token punctuation">,</span>
+  <span class="token comment">// 是否自动在浏览器打开</span>
+  <span class="token literal-property property">open</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token comment">// 是否开启 https</span>
+  <span class="token literal-property property">https</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">hotOnly</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token comment">//是否开启热更新</span>
+  <span class="token comment">// 服务端渲染</span>
+  <span class="token literal-property property">ssr</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+  <span class="token comment">// 引入第三方的配置</span>
+  <span class="token literal-property property">optimizeDeps</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">include</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;moment&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;echarts&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;axios&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;mockjs&quot;</span><span class="token punctuation">]</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">alias</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 键必须以斜线开始和结束</span>
+    <span class="token string-property property">'/@/'</span><span class="token operator">:</span> path<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span> <span class="token string">'./src'</span><span class="token punctuation">)</span>
+    <span class="token comment">// '/@components/': path.resolve(__dirname, './src/components')</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  跨域配置
+  <span class="token literal-property property">proxy</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 如果是 /lsbdb 打头，则访问地址如下</span>
+    <span class="token string-property property">'/lsbdb'</span><span class="token operator">:</span> <span class="token string">'http://10.192.195.96:8087'</span><span class="token punctuation">,</span>
+    <span class="token comment">// 如果是 /lsbdb 打头，则访问地址如下</span>
+    <span class="token comment">// '/lsbdb': {</span>
+    <span class="token comment">//   target: 'http://10.192.195.96:8087/',</span>
+    <span class="token comment">//   changeOrigin: true,</span>
+    <span class="token comment">//   // rewrite: path =&gt; path.replace(/^\/lsbdb/, '')</span>
+    <span class="token comment">// }</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div></div></section> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev"><a href="/web/vue/vue3_vuex.html" class="prev">
+            Vue3.0 Vuex 安装和使用
+          </a></span> <span class="next"><a href="/web/vue/vue3_i_element-plus.html">
+            vue3.0 vite脚手架 UI库
+          </a></span></p></div> <div class="comments-wrapper"><!----></div> <ul class="side-bar sub-sidebar-wrapper" style="width:0;" data-v-cb1513f6></ul></main> <!----></div></div></div></div><div class="global-ui"><!----><!----><div class="kanbanniang" data-v-5775ee02><div class="banniang-container" style="display:;" data-v-5775ee02><div class="messageBox" style="right:68px;bottom:190px;display:none;" data-v-5775ee02>
+      欢迎来到 波波-博客
+    </div> <div class="operation" style="right:90px;bottom:40px;display:;" data-v-5775ee02><i class="kbnfont kbn-ban-home ban-home" data-v-5775ee02></i> <i class="kbnfont kbn-ban-message message" data-v-5775ee02></i> <i class="kbnfont kbn-ban-close close" data-v-5775ee02></i> <a target="_blank" href="https://vuepress-theme-reco.recoluan.com/views/plugins/kanbanniang.html" data-v-5775ee02><i class="kbnfont kbn-ban-info info" data-v-5775ee02></i></a> <i class="kbnfont kbn-ban-theme skin" style="display:;" data-v-5775ee02></i></div> <canvas id="banniang" width="150" height="220" class="live2d" style="right:90px;bottom:-20px;opacity:0.9;" data-v-5775ee02></canvas></div> <div class="showBanNiang" style="display:none;" data-v-5775ee02>
+    看板娘
+  </div></div><div></div></div></div>
+    <script src="/assets/js/app.7593c070.js" defer></script><script src="/assets/js/3.baf7cf9e.js" defer></script><script src="/assets/js/1.1698fd40.js" defer></script><script src="/assets/js/58.6d89e6f8.js" defer></script>
+  </body>
+</html>
